@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/expense-tracker', {
+mongoose.connect('mongodb://mongodb:27017/expense-tracker', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -31,7 +31,7 @@ app.use(
     resave: true,
     saveUninitialized: true,
     store: MongoStore.create({
-      mongoUrl: 'mongodb://localhost:27017/expense-tracker', // Replace with your MongoDB connection string
+      mongoUrl: 'mongodb://mongodb:27017/expense-tracker', // Replace with your MongoDB connection string
       collection: 'sessions',
     }),
   })
