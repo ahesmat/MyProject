@@ -1,0 +1,9 @@
+/* styles.css */
+body {
+  background-color: red;
+}
+
+h1 {
+  color: white; /* Set text color to white for better visibility on red background */
+}
+
