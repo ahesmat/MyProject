@@ -72,7 +72,7 @@ pipeline {
             }
         }
 
-    }
+    
        stage('just testing the webhook'){
          steps{
             script{
