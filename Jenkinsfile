@@ -73,12 +73,5 @@ pipeline {
         }
 
     
-       stage('just testing the webhook'){
-         steps{
-            script{
-                   sh 'echo "if you can see this text in Jenkins that means that your webhook is working successfully"'
-                  }
-           
-               }
 
 }
