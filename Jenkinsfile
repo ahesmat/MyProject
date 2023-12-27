@@ -46,6 +46,7 @@ pipeline {
                 }
             }
         }
+
         stage('Terraform Output') {
              
             steps {
@@ -72,6 +73,6 @@ pipeline {
             }
         }
 
-    
+}    
 
-}
+
